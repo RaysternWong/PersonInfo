@@ -4,23 +4,16 @@
 
 
 
-int setFirstName(PersonInfo *info, char *name);
+int setFirstName(PersonInfo *info, char *name)
 {    
-  char *firstname;
+   
+   info->name=name;
+
   
-  if (name[]=0){
-   printf("Wrong Name");
-   return 0; 
-   }
-   	
-  else {
-  firstname= name;
-  Printf("Name : %s\n", firstname;);
-  
-  return firstname;}
+  return name;
   
 }  
-
+/*
 int setLastName(PersonInfo *info, char *name)
 {
   char *LastName;
@@ -40,6 +33,16 @@ int setLastName(PersonInfo *info, char *name)
 
 int setAge( PersonInfo *info, int age)
 {
-  int age;
+  
+  
+  if ( age <1 || age>149){
+    printf("Invalid age\n");
+	return 0;
+	}
+  else 
+    return age;
+}  /*
+
+
   
   

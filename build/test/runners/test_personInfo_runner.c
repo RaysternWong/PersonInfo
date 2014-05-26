@@ -31,6 +31,8 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_setFirstName_should_return_Jack(void);
+extern void test_setLastName_should_return_Lion(void);
+extern void test_setAge_given21_should_return21(void);
 
 
 //=======Test Reset Option=====
@@ -46,7 +48,9 @@ int main(void)
 {
   Unity.TestFile = "test_personInfo.c";
   UnityBegin();
-  RUN_TEST(test_setFirstName_should_return_Jack, 15);
+  RUN_TEST(test_setFirstName_should_return_Jack, 5);
+  RUN_TEST(test_setLastName_should_return_Lion, 14);
+  RUN_TEST(test_setAge_given21_should_return21, 23);
 
   return (UnityEnd());
 }
